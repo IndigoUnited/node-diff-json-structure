@@ -1,0 +1,39 @@
+{
+  "name": "diff-json-structure",
+  "version": "1.0.0",
+  "description": "Get the structural diff of two JSON objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec --bail"
+  },
+  "bugs": {
+    "url": "https://github.com/IndigoUnited/node-diff-json-structure/issues/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IndigoUnited/node-diff-json-structure.git"
+  },
+  "keywords": [
+    "diff",
+    "json",
+    "structure",
+    "structural"
+  ],
+  "author": "IndigoUnited <hello@indigounited.com> (http://indigounited.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@satazor/eslint-config": "^1.0.0",
+    "browserify": "^12.0.1",
+    "eslint": "^1.10.3",
+    "expect.js": "^0.3.1",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "deep-for-each": "^1.0.0",
+    "diff": "^2.2.1",
+    "is-plain-object": "^2.0.1",
+    "lodash.assign": "^3.2.0",
+    "lodash.clonedeep": "^3.0.2",
+    "typeof": "^1.0.0"
+  }
+}
