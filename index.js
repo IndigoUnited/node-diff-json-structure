@@ -8,6 +8,10 @@ var forEach = require('deep-for-each');
 var jsdiff = require('diff');
 
 function mapToType(value, options) {
+    options = assign({
+        typeMapper: null,
+    }, options);
+
     value = cloneDeep(value);
 
     forEach(value, function (value, prop, subject, path) {
@@ -24,10 +28,6 @@ function mapToType(value, options) {
 }
 
 function diff(oldObj, newObj, options) {
-    options = assign({
-        typeMapper: null,
-    }, options);
-
     oldObj = mapToType(oldObj, options);
     newObj = mapToType(newObj, options);
 
@@ -35,3 +35,4 @@ function diff(oldObj, newObj, options) {
 }
 
 module.exports = diff;
+module.exports.mapToType = mapToType;
