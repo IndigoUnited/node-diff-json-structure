@@ -61,7 +61,7 @@ printDiff(diff({
 }));
 ```
 
-![basic](./screenshots/basic.png)
+<img src="./screenshots/basic.png" width="300">
 
 
 Usage with `options.typeMapper` to ignore differences of socialProvider items of the example above:
@@ -95,7 +95,7 @@ printDiff(diff({
 }));
 ```
 
-![basic](./screenshots/mapper.png)
+<img src="./screenshots/mapper.png" width="300">
 
 
 ## Tests
