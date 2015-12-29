@@ -1,6 +1,6 @@
 {
   "name": "diff-json-structure",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Get the structural diff of two JSON objects",
   "main": "index.js",
   "scripts": {
