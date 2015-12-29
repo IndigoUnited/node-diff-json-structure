@@ -69,7 +69,7 @@ printDiff(diff(oldObj, newObj));
 <img src="./screenshots/basic.png" width="300">
 
 
-Usage with `options.typeMapper` to ignore differences of socialProvider items of the example above:
+Usage with `options.typeMapper` to ignore differences of socialProvider items of the previous example:
 
 ```js
 printDiff(diff(oldObj, newObj, {
