@@ -14,8 +14,9 @@ Get the structural diff of two JSON objects, returning the same result as [diff]
 
 Available options:
 
-- typeMapper
+- typeMapper - A function that lets you override types for specific paths
 - .. and any option that [diff](https://github.com/kpdecker/jsdif)'s `.diffJson()` method supports
+
 
 ### Examples
 
@@ -43,14 +44,16 @@ function printDiff(parts) {
     process.stdout.write('\n');
 }
 
-printDiff(diff({
+var oldObject = {
     environment: 'dev',
     googleAppId: 'UA-3234432-22',
     socialProviders: ['facebook'],
     libraries: {
         jquery: './node_modules/jquery',
     },
-}, {
+};
+
+var newObj = {
     environment: 'dev',
     dbHost: '127.0.0.1:9000',
     socialProviders: ['facebook', 'twitter'],
@@ -58,7 +61,9 @@ printDiff(diff({
         jquery: './node_modules/jquery/jquery',
         moment: './node_modules/moment/moment',
     },
-}));
+};
+
+printDiff(diff(oldObj, newObj));
 ```
 
 <img src="./screenshots/basic.png" width="300">
@@ -67,22 +72,7 @@ printDiff(diff({
 Usage with `options.typeMapper` to ignore differences of socialProvider items of the example above:
 
 ```js
-printDiff(diff({
-    environment: 'dev',
-    googleAppId: 'UA-3234432-22',
-    socialProviders: ['facebook'],
-    libraries: {
-        jquery: './node_modules/jquery',
-    },
-}, {
-    environment: 'dev',
-    dbHost: '127.0.0.1:9000',
-    socialProviders: ['facebook', 'twitter'],
-    libraries: {
-        jquery: './node_modules/jquery/jquery',
-        moment: './node_modules/moment/moment',
-    },
-}, {
+printDiff(diff(oldObj, newObj, {
     typeMapper: function (path, value, prop, subject) {
         // path is a string that contains the full path to this value
         // e.g.: libraries.jquery and socialProviders[0]
