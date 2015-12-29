@@ -1,6 +1,6 @@
 # diff-json-structure [![Build Status](https://travis-ci.org/IndigoUnited/node-diff-json-structure.svg?branch=master)](https://travis-ci.org/IndigoUnited/node-diff-json-structure)
 
-Get the structural diff of two JSON objects, returning the same result as [diff][https://github.com/kpdecker/jsdiff]'s .diffJson() method.
+Get the structural diff of two JSON objects, returning the same result as [diff](https://github.com/kpdecker/jsdiff)'s `.diffJson()` method.
 
 
 ## Installation
@@ -15,7 +15,7 @@ Get the structural diff of two JSON objects, returning the same result as [diff]
 Available options:
 
 - typeMapper
-- .. and any option that [diff][https://github.com/kpdecker/jsdiff]'s .diffJson() method supports
+- .. and any option that [diff](https://github.com/kpdecker/jsdif)'s `.diffJson()` method supports
 
 ### Examples
 
@@ -39,6 +39,8 @@ function printDiff(parts) {
 
         process.stdout.write(chalk[color](part.value));
     });
+
+    process.stdout.write('\n');
 }
 
 printDiff(diff({
@@ -59,7 +61,7 @@ printDiff(diff({
 }));
 ```
 
-[!basic](./screenshots/basic.png)
+![basic](./screenshots/basic.png)
 
 
 Usage with `options.typeMapper` to ignore differences of socialProvider items of the example above:
@@ -93,7 +95,7 @@ printDiff(diff({
 }));
 ```
 
-[!basic](./screenshots/mapper.png)
+![basic](./screenshots/mapper.png)
 
 
 ## Tests
