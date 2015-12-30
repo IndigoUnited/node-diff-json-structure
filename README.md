@@ -23,7 +23,7 @@ Calculates the structural diff between `oldObj` and `newObj`, returning an array
 Available options:
 
 - typeMapper - A function that lets you override types for specific paths
-- .. and any option that [diff](https://github.com/kpdecker/jsdif)'s `.diffJson()` method supports
+- .. and any option that [diff](https://github.com/kpdecker/jsdiff)'s `.diffJson()` method supports
 
 
 ### Examples
