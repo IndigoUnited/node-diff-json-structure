@@ -26,7 +26,6 @@
     "browserify": "^12.0.1",
     "chalk": "^1.1.1",
     "deep-filter": "^0.1.2",
-    "eslint": "^1.10.3",
     "expect.js": "^0.3.1",
     "mocha": "^2.1.0"
   },
