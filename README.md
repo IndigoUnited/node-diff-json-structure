@@ -1,6 +1,6 @@
 # diff-json-structure [![Build Status](https://travis-ci.org/IndigoUnited/node-diff-json-structure.svg?branch=master)](https://travis-ci.org/IndigoUnited/node-diff-json-structure)
 
-Get the structural diff of two JSON objects, using [diff](https://github.com/kpdecker/jsdiff)'s internally which is a module used by several test frameworks.
+Get the structural diff of two JSON objects, using [diff](https://www.npmjs.com/package/diff)'s internally which is a module used by several test frameworks.
 
 
 It is considered a structural difference whenever:
@@ -23,7 +23,7 @@ Calculates the structural diff between `oldObj` and `newObj`, returning an array
 Available options:
 
 - typeMapper - A function that lets you override types for specific paths
-- .. and any option that [diff](https://github.com/kpdecker/jsdiff)'s `.diffJson()` method supports
+- .. and any option that [diff](https://www.npmjs.com/package/diff)'s `.diffJson()` method supports
 
 
 ### Examples
