@@ -34,19 +34,22 @@ Simple usage:
 var diff = require('diff-json-structure');
 var chalk = require('chalk');
 
+// Utility function to visually print the diff
+// Tweak it at your own taste
 function printDiff(parts) {
     parts.forEach(function (part) {
-        var color;
-
-        if (part.added) {
-            color = 'green';
-        } else if (part.removed) {
-            color = 'red';
-        } else {
-            color = 'grey';
-        }
-
-        process.stdout.write(chalk[color](part.value));
+        part.value
+        .split('\n')
+        .filter(function (line) { return !!line; })
+        .forEach(function (line) {
+            if (part.added) {
+                process.stdout.write(chalk.green('+  ' + line) + '\n');
+            } else if (part.removed) {
+                process.stdout.write(chalk.red('-  ' + line) + '\n');
+            } else {
+                process.stdout.write(chalk.dim('   ' + line) + '\n');
+            }
+        });
     });
 
     process.stdout.write('\n');
@@ -74,7 +77,7 @@ var newObj = {
 printDiff(diff(oldObj, newObj));
 ```
 
-<img src="./screenshots/basic.png" width="300">
+<img src="./doc/basic.png" width="300">
 
 
 Usage with `options.typeMapper` to ignore differences of socialProvider items of the previous example:
@@ -83,7 +86,8 @@ Usage with `options.typeMapper` to ignore differences of socialProvider items of
 printDiff(diff(oldObj, newObj, {
     typeMapper: function (path, value, prop, subject) {
         // path is a string that contains the full path to this value
-        // e.g.: libraries.jquery and socialProviders[0]
+        // e.g.: 'libraries.jquery' and 'socialProviders[0]'
+
         // You may return custom types here.. if nothing is returned, the normal
         // flow of identifying the structure recursively will continue
         if (path === 'socialProviders') {
@@ -93,7 +97,7 @@ printDiff(diff(oldObj, newObj, {
 }));
 ```
 
-<img src="./screenshots/mapper.png" width="300">
+<img src="./doc/mapper.png" width="300">
 
 
 ## Tests
