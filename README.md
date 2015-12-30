@@ -1,6 +1,12 @@
 # diff-json-structure [![Build Status](https://travis-ci.org/IndigoUnited/node-diff-json-structure.svg?branch=master)](https://travis-ci.org/IndigoUnited/node-diff-json-structure)
 
-Get the structural diff of two JSON objects, returning the same result as [diff](https://github.com/kpdecker/jsdiff)'s `.diffJson()` method.
+Get the structural diff of two JSON objects, using [diff](https://github.com/kpdecker/jsdiff)'s internally which is a module used by several test frameworks.
+
+
+It is considered a structural difference whenever:
+
+  - items are added or removed to objects and arrays
+  - the type of the item changes
 
 
 ## Installation
@@ -11,6 +17,8 @@ Get the structural diff of two JSON objects, returning the same result as [diff]
 ## Usage
 
 `diff(oldObj, newObj, [options])`
+
+Calculates the structural diff between `oldObj` and `newObj`, returning an array of parts.
 
 Available options:
 
@@ -54,7 +62,7 @@ var oldObject = {
 };
 
 var newObj = {
-    environment: 'dev',
+    environment: 'prod',
     dbHost: '127.0.0.1:9000',
     socialProviders: ['facebook', 'twitter'],
     libraries: {
