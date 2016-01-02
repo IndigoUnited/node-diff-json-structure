@@ -1,4 +1,7 @@
-# diff-json-structure [![Build Status](https://travis-ci.org/IndigoUnited/node-diff-json-structure.svg?branch=master)](https://travis-ci.org/IndigoUnited/node-diff-json-structure)
+# diff-json-structure
+
+[![npm version](https://img.shields.io/npm/v/diff-json-structure.svg)](https://www.npmjs.com/package/diff-json-structure) [![npm downloads](https://img.shields.io/npm/dm/diff-json-structure.svg)](https://www.npmjs.com/package/diff-json-structure) [![Build Status](https://img.shields.io/travis/IndigoUnited/node-diff-json-structure/master.svg)](https://travis-ci.org/IndigoUnited/node-diff-json-structure) [![Dependency Status](https://img.shields.io/david/IndigoUnited/node-diff-json-structure.svg)](https://david-dm.org/IndigoUnited/node-diff-json-structure) [![devDependency Status](https://img.shields.io/david/dev/IndigoUnited/node-diff-json-structure.svg)](https://david-dm.org/IndigoUnited/node-diff-json-structure#info=devDependencies)
+
 
 Get the structural diff of two JSON objects, using [diff](https://www.npmjs.com/package/diff)'s internally which is a module used by several test frameworks.
 
