@@ -23,7 +23,7 @@
   "license": "MIT",
   "devDependencies": {
     "@satazor/eslint-config": "^1.0.0",
-    "browserify": "^12.0.1",
+    "browserify": "^13.0.0",
     "chalk": "^1.1.1",
     "deep-filter": "^1.0.0",
     "expect.js": "^0.3.1",
