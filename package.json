@@ -34,7 +34,7 @@
     "diff": "^2.2.1",
     "is-plain-object": "^2.0.1",
     "lodash.assign": "^3.2.0",
-    "lodash.clonedeep": "^3.0.2",
+    "lodash.clonedeep": "^4.0.1",
     "typeof": "^1.0.0"
   }
 }
