@@ -4,7 +4,7 @@
   "description": "Get the structural diff of two JSON objects",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec --bail"
+    "test": "mocha --bail"
   },
   "bugs": {
     "url": "https://github.com/IndigoUnited/node-diff-json-structure/issues/"
