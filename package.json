@@ -4,6 +4,7 @@
   "description": "Get the structural diff of two JSON objects",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint **/*.js",
     "test": "mocha --bail"
   },
   "bugs": {
@@ -22,10 +23,11 @@
   "author": "IndigoUnited <hello@indigounited.com> (http://indigounited.com)",
   "license": "MIT",
   "devDependencies": {
-    "@satazor/eslint-config": "^1.0.0",
+    "@satazor/eslint-config": "^2.0.0",
     "browserify": "^13.0.0",
     "chalk": "^1.1.1",
     "deep-filter": "^1.0.0",
+    "eslint": "^2.2.0",
     "expect.js": "^0.3.1",
     "mocha": "^2.1.0"
   },
