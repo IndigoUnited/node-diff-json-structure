@@ -24,7 +24,7 @@
   "license": "MIT",
   "devDependencies": {
     "@satazor/eslint-config": "^3.0.0",
-    "browserify": "^13.0.0",
+    "browserify": "^14.1.0",
     "chalk": "^1.1.1",
     "deep-filter": "^1.0.0",
     "eslint": "^3.0.0",
