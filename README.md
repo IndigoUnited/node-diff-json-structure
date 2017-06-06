@@ -11,6 +11,8 @@
 [david-dm-image]:https://img.shields.io/david/IndigoUnited/node-diff-json-structure.svg
 [david-dm-dev-url]:https://david-dm.org/IndigoUnited/node-diff-json-structure?type=dev
 [david-dm-dev-image]:https://img.shields.io/david/dev/IndigoUnited/node-diff-json-structure.svg
+[greenkeeper-image]:https://badges.greenkeeper.io/IndigoUnited/node-diff-json-structure.svg
+[greenkeeper-url]:https://greenkeeper.io/
 
 Get the structural diff of two JSON objects, using [diff](https://www.npmjs.com/package/diff)'s internally which is a module used by several test frameworks.
 
