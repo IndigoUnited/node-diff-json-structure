@@ -26,7 +26,7 @@
     "@satazor/eslint-config": "^3.0.0",
     "chalk": "^1.1.1",
     "deep-filter": "^1.0.0",
-    "eslint": "^3.0.0",
+    "eslint": "^4.1.1",
     "expect.js": "^0.3.1",
     "mocha": "^3.0.2"
   },
