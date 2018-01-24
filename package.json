@@ -31,7 +31,7 @@
     "mocha": "^3.0.2"
   },
   "dependencies": {
-    "deep-for-each": "^1.0.0",
+    "deep-for-each": "^2.0.1",
     "diff": "^3.0.0",
     "is-plain-object": "^2.0.1",
     "lodash.assign": "^4.0.0",
